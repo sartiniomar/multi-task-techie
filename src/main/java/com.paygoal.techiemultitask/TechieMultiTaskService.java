@@ -60,9 +60,9 @@ public class TechieMultiTaskService {
     return "No te lo puedo explicar";
   }
 
-  private String getSixPart() {
+  private String getSixPart(String fivePart) {
     delay(3);
-    return ", por que no vas a entender";
+    return fivePart + ", por que no vas a entender";
   }
 
   public static void delay(int seconds) {
