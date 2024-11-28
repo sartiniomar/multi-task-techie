@@ -8,28 +8,30 @@ import java.util.concurrent.TimeUnit;
 @RequiredArgsConstructor
 public class TechieMultiTaskService {
 
-  public String getCantoRapido() {
+  public String getCantoRapido(boolean throwException) {
     String result = "";
-    // Aquí la lógica para que el canto demore 3 segundos.
+    // Aquí la lógica para que el canto demore 4 segundos para el camino feliz y 3 segundos para el camino triste.
+    //
     return result;
   }
 
   public String getCantoLento() {
     String result = "";
     // Aquí la lógica para que el canto demore 5 segundos.
+    //
     return result;
   }
 
   public String getElPrimeroQueTermina() {
     String result = "";
     // Aquí la lógica para el canto que demore menos tiempo
+    //
     return result;
   }
 
-  public String getElUltimoSeparado(boolean throwException) {
-    String result = "";
-    // Aquí la lógica para el canto demore 7 segundos para el camino feliz y 3 para el no feliz
-    return result;
+  public void getProcesoRapido() {
+    // Aquí la lógica del proceso debe demorar 3 segundos
+    //
   }
 
   private String getFirstPart() {
