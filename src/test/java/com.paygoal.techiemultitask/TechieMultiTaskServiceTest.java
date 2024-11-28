@@ -13,11 +13,11 @@ public class TechieMultiTaskServiceTest extends TechieMultiTaskApplicationTest{
   @SneakyThrows
   void getCantoRapido() {
     long startTime = System.currentTimeMillis();
-    String result = techieMultiTaskService.getCantoRapido();
+    String result = techieMultiTaskService.getCantoRapido(false);
     long endTime = System.currentTimeMillis();
     int time = (int) ((endTime - startTime)/1000);
-    assertEquals(3, time);
-    assertEquals("En argentina nací, tierra de Diego y Lionel, de los pibes de malvinas", result);
+    assertEquals(4, time);
+    assertEquals("En argentina nací, tierra de Diego y Lionel, de los pibes de malvinas, que jamás olvidaré.", result);
   }
 
   @Test
@@ -44,20 +44,19 @@ public class TechieMultiTaskServiceTest extends TechieMultiTaskApplicationTest{
 
   @Test
   @SneakyThrows
-  void getElUltimoSeparado() {
+  void getProcesoRapido() {
     long startTime = System.currentTimeMillis();
-    String result = techieMultiTaskService.getElUltimoSeparado(false);
+    techieMultiTaskService.getProcesoRapido();
     long endTime = System.currentTimeMillis();
     int time = (int) ((endTime - startTime)/1000);
-    assertEquals(7, time);
-    assertEquals("En argentina nací, tierra de Diego y Lionel, de los pibes de malvinas, que jamás olvidaré.", result);
+    assertEquals(3, time);
   }
 
   @Test
   @SneakyThrows
-  void getElUltimoLanzandoException() {
+  void getCantoRapidoException() {
     long startTime = System.currentTimeMillis();
-    String result = techieMultiTaskService.getElUltimoSeparado(true);
+    String result = techieMultiTaskService.getCantoRapido(true);
     long endTime = System.currentTimeMillis();
     int time = (int) ((endTime - startTime)/1000);
     assertEquals(3, time);
