@@ -27,8 +27,8 @@ public class TechieMultiTaskServiceTest extends TechieMultiTaskApplicationTest{
     String result = techieMultiTaskService.getCantoLento();
     long endTime = System.currentTimeMillis();
     int time = (int) ((endTime - startTime)/1000);
-    assertEquals(6, time);
-    assertEquals("En argentina nací, tierra de Diego y Lionel, de los pibes de malvinas", result);
+    assertEquals(5, time);
+    assertEquals("No te lo puedo explicar, por que no vas a entender", result);
   }
 
   @Test
@@ -60,7 +60,7 @@ public class TechieMultiTaskServiceTest extends TechieMultiTaskApplicationTest{
     String result = techieMultiTaskService.getElUltimoSeparado(true);
     long endTime = System.currentTimeMillis();
     int time = (int) ((endTime - startTime)/1000);
-    assertEquals(3, time);
+    assertEquals(7, time);
     assertEquals("500 Internal Server Error", result);
   }
 }

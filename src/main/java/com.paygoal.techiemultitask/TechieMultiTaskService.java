@@ -32,7 +32,7 @@ public class TechieMultiTaskService {
     return result;
   }
 
-  private String getFirstPart(boolean throwException) {
+  private String getFirstPart() {
     delay(2);
     return "En argentina nací";
   }
@@ -53,6 +53,16 @@ public class TechieMultiTaskService {
     }
     delay(4);
     return ", que jamás olvidaré.";
+  }
+
+  private String getFivePart() {
+    delay(2);
+    return "No te lo puedo explicar";
+  }
+
+  private String getSixPart() {
+    delay(3);
+    return ", por que no vas a entender";
   }
 
   public static void delay(int seconds) {
