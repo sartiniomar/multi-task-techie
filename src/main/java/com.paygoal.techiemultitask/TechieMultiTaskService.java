@@ -10,13 +10,13 @@ public class TechieMultiTaskService {
 
   public String getCantoRapido() {
     String result = "";
-    // Aquí la lógica para que el canto demore 4 segundos.
+    // Aquí la lógica para que el canto demore 3 segundos.
     return result;
   }
 
   public String getCantoLento() {
     String result = "";
-    // Aquí la lógica para que el canto demore 10 segundos.
+    // Aquí la lógica para que el canto demore 5 segundos.
     return result;
   }
 
@@ -28,7 +28,7 @@ public class TechieMultiTaskService {
 
   public String getElUltimoSeparado(boolean throwException) {
     String result = "";
-    // Aquí la lógica para el canto demore 7 segundos
+    // Aquí la lógica para el canto demore 7 segundos para el camino feliz y 3 para el no feliz
     return result;
   }
 

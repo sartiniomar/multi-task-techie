@@ -60,7 +60,7 @@ public class TechieMultiTaskServiceTest extends TechieMultiTaskApplicationTest{
     String result = techieMultiTaskService.getElUltimoSeparado(true);
     long endTime = System.currentTimeMillis();
     int time = (int) ((endTime - startTime)/1000);
-    assertEquals(7, time);
+    assertEquals(3, time);
     assertEquals("500 Internal Server Error", result);
   }
 }
